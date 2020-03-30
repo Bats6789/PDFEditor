@@ -48,6 +48,11 @@ public class PDFMerger {
                     inputFilenames.add( arg );
                 }
             }
+            if( outputFlag == 0 ){
+                System.err.println( "ERROR: No output flag specified." );
+            } else if( outputFlag != 2 ){
+                System.err.println( "ERROR: No output filename provided for the output flag." );
+            }
             try{
                 outputPDF = new PDDocument();
                 for( String inputFilename : inputFilenames ){
