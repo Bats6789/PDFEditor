@@ -10,9 +10,9 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf split2.pdf -o merged.pdf</exec.args>
+                <exec.args>-classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf output1.pdf -o merged2.pdf merged1.pdf</exec.args>
                 <exec.executable>java</exec.executable>
-                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor</exec.workingdir>
+                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor\</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -25,10 +25,10 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
             </goals>
             <properties>
-                <exec.args>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf split2.pdf -o merged.pdf</exec.args>
+                <exec.args>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf output1.pdf -o merged2.pdf merged1.pdf</exec.args>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
-                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor</exec.workingdir>
+                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor\</exec.workingdir>
             </properties>
         </action>
         <action>
@@ -41,9 +41,9 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf split2.pdf -o merged.pdf</exec.args>
+                <exec.args>-classpath %classpath edu.uab.cwingard.pdfeditor.PDFMerger split1.pdf output1.pdf -o merged2.pdf merged1.pdf</exec.args>
                 <exec.executable>java</exec.executable>
-                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor</exec.workingdir>
+                <exec.workingdir>C:\Users\Bats6789\Documents\OpenBeansProjects\PDFEditor\src\main\java\edu\uab\cwingard\pdfeditor\</exec.workingdir>
             </properties>
         </action>
     </actions>

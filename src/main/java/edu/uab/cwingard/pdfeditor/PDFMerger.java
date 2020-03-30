@@ -22,6 +22,9 @@ import org.apache.pdfbox.pdmodel.PDDocument;
  */
 public class PDFMerger {
     public static void main( String[] args ) throws IOException{
+        for( String arg : args ){
+            System.out.println( arg );
+        }
         String outputFilename = null;
         ArrayList<String> inputFilenames = new ArrayList<>();
         File outputFile = null;

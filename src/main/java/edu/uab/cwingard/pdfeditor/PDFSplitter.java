@@ -23,6 +23,9 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 public class PDFSplitter {
 
     public static void main(String[] args) {
+        for( String arg : args ){
+            System.out.println( arg );
+        }
         String filename;
         String path;
         int splitIndex;
@@ -71,8 +74,7 @@ public class PDFSplitter {
                 }
 
                 for (PDDocument document : pdfDocuments) {
-                    System.out.println( path );
-                    document.save( path+ "/" + filenames.get( i ));
+                    document.save( filenames.get( i ));
                     document.close();
                     ++i;
                 }
